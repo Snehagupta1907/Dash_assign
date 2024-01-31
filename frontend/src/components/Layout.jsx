@@ -5,7 +5,7 @@ import Topcards from './Topcards'
 
 const Layout = () => {
   return (
-    <div className="px-4 sm:ml-64">
+    <div className="px-4 sm:ml-64 h-full">
    <div className="p-4  rounded-lg dark:border-gray-700">
       <Topcards/>
      <Middlecard/>

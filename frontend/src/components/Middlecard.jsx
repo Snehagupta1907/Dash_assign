@@ -1,14 +1,14 @@
 import React from "react";
 import Customers from "./Customers";
-import Growth from "./Growth";
+import Chart1 from "./Chart";
 
 const Middlecard = () => {
   return (
     <div className="grid grid-cols-2 mb-4">
       <Customers />
       <div className="flex flex-col  justify-between h-[350px] mx-1 bg-[#f6f6f3]">
-        <div className="bg-white h-full mb-3 rounded-xl">
-          <Growth />
+        <div className="bg-white h-[300px] mb-3 rounded-xl">
+          <Chart1/>
         </div>
         <div>
           <div className="flex flex-row gap-3 w-full h-[100px]">

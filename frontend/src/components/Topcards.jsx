@@ -3,7 +3,7 @@ import graph from "../images/Frame 6.svg";
 
 const Topcards = () => {
   return (
-    <div className="flex flex-row w-full gap-2 mb-4">
+    <div className="flex flex-row w-screen gap-2 mb-4">
       <div className="flex items-start flex-col gap-3 justify-between h-[200px] w-[325px] rounded-xl  bg-white pl-8 py-6">
         <div>
           <p className="font-semibold text-[15px] ">Revnues</p>

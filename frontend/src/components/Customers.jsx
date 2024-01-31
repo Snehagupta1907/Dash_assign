@@ -11,7 +11,7 @@ const Customers = () => {
   return (
     <div className="flex flex-col py-6 justify-between h-[350px] rounded-xl mx-1 px-4 bg-white">
       <div className="flex flex-row justify-between w-full ">
-        <p className="font-semibold text-[15px]">Customers</p>
+        <p className="text-black text-lg font-semibold">Customers</p>
         <p className="text-xs text-[#454545] flex flex-row items-center">
           Sort by <span className="font-medium text-xs pl-1"> Newest</span>
           <span className="text-sm font-medium text-black ">
@@ -33,7 +33,7 @@ const Customers = () => {
           </span>
         </p>
       </div>
-      <div>
+      <div >
         {customerData.map((customer, index) => (
           <CustomerOption
             key={index}

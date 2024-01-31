@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from './Icon';
 
 const CustomerOption = ({ name, place, url, selected, onSelect }) => {
-  const containerClassName = `flex flex-row gap-2 items-center py-3 cursor-pointer ${
+  const containerClassName = `flex flex-row gap-2 items-center py-3 cursor-pointer hover:bg-[#fff7e8] ${
     selected ? 'bg-[#fff7e8] rounded-xl w-full' : ''
   }`;
 
