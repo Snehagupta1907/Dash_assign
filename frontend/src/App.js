@@ -3,10 +3,10 @@ import Sidebar from './components/Sidebar'
 
 const App = () => {
   return (
-    <>
+    <div className='h-full'>
     <Sidebar/>
     <Layout/>
-    </>
+    </div>
   )
 }
 

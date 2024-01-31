@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../images/Logomark.svg";
+import SearchBar from "./SearchBar";
 
 const Sidebar = () => {
   return (
@@ -9,7 +10,7 @@ const Sidebar = () => {
         data-drawer-toggle="logo-sidebar"
         aria-controls="logo-sidebar"
         type="button"
-        className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-[Orange] dark:focus:ring-gray-600"
       >
         <span className="sr-only">Open sidebar</span>
         <svg
@@ -39,142 +40,264 @@ const Sidebar = () => {
           >
             <img src={logo} className="me-3 sm:h-10" alt="Flowbite Logo" />
           </a>
-          <ul className="space-y-2 font-medium">
+          <SearchBar/>
+          <ul className="space-y-1 font-medium font-inter text-sm ">
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
               >
                 <svg
-                  className="w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 22 21"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
                 >
-                  <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />
-                  <path d="M12.5 0c-.157 0-.311.01-.565.027A1 1 0 0 0 11 1.02V10h8.975a1 1 0 0 0 1-.935c.013-.188.028-.374.028-.565A8.51 8.51 0 0 0 12.5 0Z" />
+                  <path
+                    d="M6.66666 2.66666L9.33332 13.3333M7.99999 7.99999L2.66666 9.33332M2.66666 3.99999C2.66666 3.64637 2.80713 3.30723 3.05718 3.05718C3.30723 2.80713 3.64637 2.66666 3.99999 2.66666H12C12.3536 2.66666 12.6928 2.80713 12.9428 3.05718C13.1928 3.30723 13.3333 3.64637 13.3333 3.99999V12C13.3333 12.3536 13.1928 12.6928 12.9428 12.9428C12.6928 13.1928 12.3536 13.3333 12 13.3333H3.99999C3.64637 13.3333 3.30723 13.1928 3.05718 12.9428C2.80713 12.6928 2.66666 12.3536 2.66666 12V3.99999Z"
+                    stroke="#FFA500"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
+
                 <span className="ms-3">Dashboard</span>
               </a>
             </li>
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
               >
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 18"
-                >
-                  <path d="M6.143 0H1.857A1.857 1.857 0 0 0 0 1.857v4.286C0 7.169.831 8 1.857 8h4.286A1.857 1.857 0 0 0 8 6.143V1.857A1.857 1.857 0 0 0 6.143 0Zm10 0h-4.286A1.857 1.857 0 0 0 10 1.857v4.286C10 7.169 10.831 8 11.857 8h4.286A1.857 1.857 0 0 0 18 6.143V1.857A1.857 1.857 0 0 0 16.143 0Zm-10 10H1.857A1.857 1.857 0 0 0 0 11.857v4.286C0 17.169.831 18 1.857 18h4.286A1.857 1.857 0 0 0 8 16.143v-4.286A1.857 1.857 0 0 0 6.143 10Zm10 0h-4.286A1.857 1.857 0 0 0 10 11.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 18 16.143v-4.286A1.857 1.857 0 0 0 16.143 10Z" />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Kanban</span>
-                <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">
-                  Pro
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z" />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Inbox</span>
-                <span className="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">
-                  3
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 18"
-                >
-                  <path d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z" />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Users</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 18 20"
-                >
-                  <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z" />
-                </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Products</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
                   fill="none"
-                  viewBox="0 0 18 16"
                 >
                   <path
-                    stroke="currentColor"
+                    d="M2 14.5V13.1667C2 12.4594 2.28095 11.7811 2.78105 11.281C3.28115 10.781 3.95942 10.5 4.66667 10.5H7.33333C8.04058 10.5 8.71885 10.781 9.21895 11.281C9.71905 11.7811 10 12.4594 10 13.1667V14.5M10.6667 2.58667C11.2403 2.73354 11.7487 3.06714 12.1118 3.53488C12.4748 4.00262 12.6719 4.57789 12.6719 5.17C12.6719 5.76212 12.4748 6.33739 12.1118 6.80513C11.7487 7.27287 11.2403 7.60647 10.6667 7.75334M14 14.5V13.1667C13.9966 12.5781 13.7986 12.0072 13.4368 11.5429C13.0751 11.0787 12.5699 10.7471 12 10.6M3.33333 5.16667C3.33333 5.87391 3.61428 6.55219 4.11438 7.05229C4.61448 7.55238 5.29276 7.83333 6 7.83333C6.70724 7.83333 7.38552 7.55238 7.88562 7.05229C8.38572 6.55219 8.66667 5.87391 8.66667 5.16667C8.66667 4.45942 8.38572 3.78115 7.88562 3.28105C7.38552 2.78095 6.70724 2.5 6 2.5C5.29276 2.5 4.61448 2.78095 4.11438 3.28105C3.61428 3.78115 3.33333 4.45942 3.33333 5.16667Z"
+                    stroke="#7D7D7D"
+                    stroke-width="1.25"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"
                   />
                 </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Sign In</span>
+                <span className="flex-1 ms-3 whitespace-nowrap">Customers</span>
+                <span className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-black ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                  >
+                    <path
+                      d="M4 6.5L8 10.5L12 6.5"
+                      stroke="#7D7D7D"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
               </a>
             </li>
             <li>
               <a
                 href="/"
-                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
               >
                 <svg
-                  className="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
                 >
-                  <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z" />
-                  <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z" />
-                  <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z" />
+                  <path
+                    d="M6.00001 3.33333H4.66668C4.31305 3.33333 3.97392 3.47381 3.72387 3.72386C3.47382 3.97391 3.33334 4.31304 3.33334 4.66667V12.6667C3.33334 13.0203 3.47382 13.3594 3.72387 13.6095C3.97392 13.8595 4.31305 14 4.66668 14H11.3333C11.687 14 12.0261 13.8595 12.2762 13.6095C12.5262 13.3594 12.6667 13.0203 12.6667 12.6667V4.66667C12.6667 4.31304 12.5262 3.97391 12.2762 3.72386C12.0261 3.47381 11.687 3.33333 11.3333 3.33333H10M6.00001 3.33333C6.00001 2.97971 6.14049 2.64057 6.39053 2.39052C6.64058 2.14048 6.97972 2 7.33334 2H8.66668C9.0203 2 9.35944 2.14048 9.60949 2.39052C9.85953 2.64057 10 2.97971 10 3.33333M6.00001 3.33333C6.00001 3.68696 6.14049 4.02609 6.39053 4.27614C6.64058 4.52619 6.97972 4.66667 7.33334 4.66667H8.66668C9.0203 4.66667 9.35944 4.52619 9.60949 4.27614C9.85953 4.02609 10 3.68696 10 3.33333M6.00001 11.3333V8.66667M8.00001 11.3333V10.6667M10 11.3333V10"
+                    stroke="#7D7D7D"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
                 </svg>
-                <span className="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  All Reports
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M2.39998 6H13.6M2.39998 10H13.6M7.66669 2C6.54358 3.79974 5.94816 5.87858 5.94816 8C5.94816 10.1214 6.54358 12.2003 7.66669 14M8.33333 2C9.45644 3.79974 10.0519 5.87858 10.0519 8C10.0519 10.1214 9.45644 12.2003 8.33333 14M2 8C2 8.78793 2.15519 9.56815 2.45672 10.2961C2.75825 11.0241 3.20021 11.6855 3.75736 12.2426C4.31451 12.7998 4.97595 13.2417 5.7039 13.5433C6.43185 13.8448 7.21207 14 8 14C8.78793 14 9.56815 13.8448 10.2961 13.5433C11.0241 13.2417 11.6855 12.7998 12.2426 12.2426C12.7998 11.6855 13.2417 11.0241 13.5433 10.2961C13.8448 9.56815 14 8.78793 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2C6.4087 2 4.88258 2.63214 3.75736 3.75736C2.63214 4.88258 2 6.4087 2 8Z"
+                    stroke="#7D7D7D"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span className="flex-1 ms-3 whitespace-nowrap">Geography</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M2 13.3333L2.86667 10.7333C1.31733 8.442 1.916 5.48533 4.26667 3.81733C6.61733 2.15 9.99333 2.28666 12.1633 4.13733C14.3333 5.98866 14.6267 8.98133 12.8493 11.138C11.072 13.2947 7.77267 13.948 5.13333 12.6667L2 13.3333Z"
+                    stroke="#7D7D7D"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Conversations
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M11.3333 6.66666L10 2.66666M4.66667 6.66666L6 2.66666M7.33331 13.3333H4.82931C4.35158 13.3333 3.88963 13.1623 3.52707 12.8512C3.1645 12.5401 2.92526 12.1095 2.85265 11.6373L2.01598 6.86933C1.98676 6.67932 1.99897 6.48524 2.05178 6.30039C2.1046 6.11554 2.19676 5.9443 2.32194 5.7984C2.44713 5.6525 2.60239 5.5354 2.77708 5.45513C2.95176 5.37486 3.14174 5.33331 3.33398 5.33333H12.6666C12.8589 5.33331 13.0489 5.37486 13.2236 5.45513C13.3982 5.5354 13.5535 5.6525 13.6787 5.7984C13.8039 5.9443 13.896 6.11554 13.9488 6.30039C14.0017 6.48524 14.0139 6.67932 13.9846 6.86933L13.6653 8.68866M10 12.6667L11.3333 14L14 11.3333M6.66667 9.33333C6.66667 9.68695 6.80714 10.0261 7.05719 10.2761C7.30724 10.5262 7.64638 10.6667 8 10.6667C8.35362 10.6667 8.69276 10.5262 8.94281 10.2761C9.19286 10.0261 9.33333 9.68695 9.33333 9.33333C9.33333 8.97971 9.19286 8.64057 8.94281 8.39052C8.69276 8.14047 8.35362 8 8 8C7.64638 8 7.30724 8.14047 7.05719 8.39052C6.80714 8.64057 6.66667 8.97971 6.66667 9.33333Z"
+                    stroke="#7D7D7D"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span className="flex-1 ms-3 whitespace-nowrap">Deals</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/"
+                className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-[Orange] group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                >
+                  <path
+                    d="M2.66666 4C2.66666 5.10467 5.05466 6 7.99999 6C10.9453 6 13.3333 5.10467 13.3333 4M2.66666 4C2.66666 2.89533 5.05466 2 7.99999 2C10.9453 2 13.3333 2.89533 13.3333 4M2.66666 4V8M13.3333 4V8M2.66666 8C2.66666 9.10467 5.05466 10 7.99999 10C8.74532 10 9.45532 9.94267 10.1 9.83933M2.66666 8V12C2.66666 13.1047 5.05466 14 7.99999 14C8.10466 14 8.20799 13.9987 8.31066 13.9967M10.6667 12.6667H14.6667M14.6667 12.6667L12.6667 10.6667M14.6667 12.6667L12.6667 14.6667"
+                    stroke="#7D7D7D"
+                    stroke-width="1.25"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span className="flex-1 ms-3 whitespace-nowrap">Export</span>
               </a>
             </li>
           </ul>
+
+          <div className="absolute bottom-4 left-3">
+            <ul className="space-y-1 font-medium text-sm">
+              <li className="flex flex-row gap-2 items-center">
+              <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user"/>
+              <div className="flex flex-col">
+              <p>Gustavo Xavier</p>
+              <span className="bg-[#FFCD71] border text-black px-2 rounded-full text-xs w-fit">
+                Admin
+
+              </span>
+              </div>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.25 4.17998C13.4791 4.31029 13.6694 4.4993 13.8012 4.72755C13.933 4.95581 14.0016 5.21507 14 5.47865V10.3346C14 10.874 13.7047 11.3713 13.228 11.6333L8.728 14.48C8.5049 14.6025 8.25451 14.6667 8 14.6667C7.74549 14.6667 7.4951 14.6025 7.272 14.48L2.772 11.6333C2.53878 11.5059 2.34408 11.3181 2.20827 11.0896C2.07247 10.8612 2.00053 10.6004 2 10.3346V5.47798C2 4.93865 2.29533 4.44198 2.772 4.17998L7.272 1.52665C7.50169 1.40001 7.75971 1.33359 8.022 1.33359C8.28429 1.33359 8.54231 1.40001 8.772 1.52665L13.272 4.17998H13.25Z"
+                      stroke="#7D7D7D"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6 7.99999C6 8.53042 6.21071 9.03913 6.58579 9.4142C6.96086 9.78928 7.46957 9.99999 8 9.99999C8.53043 9.99999 9.03914 9.78928 9.41421 9.4142C9.78929 9.03913 10 8.53042 10 7.99999C10 7.46956 9.78929 6.96085 9.41421 6.58578C9.03914 6.2107 8.53043 5.99999 8 5.99999C7.46957 5.99999 6.96086 6.2107 6.58579 6.58578C6.21071 6.96085 6 7.46956 6 7.99999Z"
+                      stroke="#7D7D7D"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span className="flex-1 ms-3 whitespace-nowrap">
+                    Settings
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  className="flex items-center p-2 text-gray-900 rounded-lg  hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.33333 5.33332V3.99999C9.33333 3.64637 9.19286 3.30723 8.94281 3.05718C8.69276 2.80713 8.35362 2.66666 8 2.66666H3.33333C2.97971 2.66666 2.64057 2.80713 2.39052 3.05718C2.14048 3.30723 2 3.64637 2 3.99999V12C2 12.3536 2.14048 12.6928 2.39052 12.9428C2.64057 13.1928 2.97971 13.3333 3.33333 13.3333H8C8.35362 13.3333 8.69276 13.1928 8.94281 12.9428C9.19286 12.6928 9.33333 12.3536 9.33333 12V10.6667M6 7.99999H14M14 7.99999L12 5.99999M14 7.99999L12 9.99999"
+                      stroke="#B01212"
+                      stroke-width="1.25"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span className="flex-1 ms-3 whitespace-nowrap text-[#B01212]">
+                    Login Out
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </aside>
     </>
