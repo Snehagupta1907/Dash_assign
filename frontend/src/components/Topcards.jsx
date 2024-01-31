@@ -3,7 +3,7 @@ import graph from "../images/Frame 6.svg";
 
 const Topcards = () => {
   return (
-    <div className="grid grid-cols-3 w-full gap-[10px] xl-gap-[120px] mb-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-[10px] xl-gap-[120px] mb-4 h-full">
       <div className="flex items-start flex-col justify-between h-[200px] w-full rounded-xl  bg-white pl-8 py-6">
         <div>
           <p className="font-semibold text-[15px] ">Revnues</p>

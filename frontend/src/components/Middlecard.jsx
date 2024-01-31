@@ -4,14 +4,14 @@ import Chart1 from "./Chart";
 
 const Middlecard = () => {
   return (
-    <div className="grid grid-cols-2 mb-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4 h-full">
       <Customers />
-      <div className="flex flex-col  justify-between h-[350px] mx-1 bg-[#f6f6f3]">
-        <div className="bg-white h-[300px] mb-3 rounded-xl">
+      <div className="flex flex-col  justify-between h-full mx-1 bg-[#f6f6f3]">
+        <div className="bg-white h-[200px] md:h-[250px] mb-3 rounded-xl">
           <Chart1/>
         </div>
         <div>
-          <div className="flex flex-row gap-3 w-full h-[100px]">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full h-full">
             <div className=" p-3 w-full bg-white rounded-xl flex flex-col justify-between">
               <div className="text-[#a2a2a2] font-medium mb-3 text-sm">Top Month</div>
               <div>

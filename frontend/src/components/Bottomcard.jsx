@@ -13,7 +13,7 @@ const Bottomcard = () => {
     "Organic Place",
   ];
   return (
-    <div className="grid grid-cols-3 w-full gap-[10px]">
+    <div className="grid grid-cols-2 md:grid-cols-3 w-full gap-[10px] h-full">
       <div className="flex flex-col items-start p-4 rounded-xl bg-white h-[250px] w-full  ">
       <div className="text-black text-lg font-semibold mb-2">Chats</div>
       <div className="text-zinc-700 text-sm font-normal">2 unread messages</div>
