@@ -34,7 +34,7 @@ fs.createReadStream('time_data.csv')
         3000
     );
 
-    console.log(`Downsampled data length: ${timestamps.length}`);
+    // console.log(`Downsampled data length: ${timestamps.length}`);
 
     const downsampledData = timestamps.map((timestamp, index) => ({
         timestamp,
