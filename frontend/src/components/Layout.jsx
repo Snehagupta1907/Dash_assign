@@ -1,18 +1,16 @@
-import React from 'react'
-import Bottomcard from './Bottomcard'
-import Middlecard from './Middlecard'
-import Topcards from './Topcards'
+import React from "react";
+import Bottomcard from "./Bottomcard";
+import Middlecard from "./Middlecard";
+import Topcards from "./Topcards";
 
 const Layout = () => {
   return (
-    <div className="px-4 sm:ml-64 h-full">
-   <div className="p-4  rounded-lg dark:border-gray-700">
-      <Topcards/>
-     <Middlecard/>
-      <Bottomcard/>
-   </div>
-</div>
-  )
-}
+    <div className="py-2 px-4 min-w-screen sm:ml-64 h-full overflow-x-hidden">
+      <Topcards />
+      <Middlecard />
+      <Bottomcard />
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;

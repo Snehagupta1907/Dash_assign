@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../images/Logomark.svg";
 import SearchBar from "./SearchBar";
 
@@ -10,7 +10,7 @@ const Sidebar = () => {
         data-drawer-toggle="logo-sidebar"
         aria-controls="logo-sidebar"
         type="button"
-        className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-[Orange] dark:focus:ring-gray-600"
+        className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-[Orange]  rounded-lg sm:hidden dark:text-[Orange] "
       >
         <span className="sr-only">Open sidebar</span>
         <svg
@@ -40,7 +40,7 @@ const Sidebar = () => {
           >
             <img src={logo} className="me-3 sm:h-10" alt="Flowbite Logo" />
           </a>
-          <SearchBar/>
+          <SearchBar />
           <ul className="space-y-1 font-medium font-inter text-sm ">
             <li>
               <a
@@ -230,14 +230,17 @@ const Sidebar = () => {
           <div className="absolute bottom-4 left-3">
             <ul className="space-y-1 font-medium text-sm">
               <li className="flex flex-row gap-2 items-center">
-              <img class="w-8 h-8 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user"/>
-              <div className="flex flex-col">
-              <p>Gustavo Xavier</p>
-              <span className="bg-[#FFCD71] border text-black px-2 rounded-full text-xs w-fit">
-                Admin
-
-              </span>
-              </div>
+                <img
+                  class="w-8 h-8 rounded-full"
+                  src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+                  alt="user"
+                />
+                <div className="flex flex-col">
+                  <p>Gustavo Xavier</p>
+                  <span className="bg-[#FFCD71] border text-black px-2 rounded-full text-xs w-fit">
+                    Admin
+                  </span>
+                </div>
               </li>
               <li>
                 <a

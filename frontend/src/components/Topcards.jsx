@@ -3,8 +3,8 @@ import graph from "../images/Frame 6.svg";
 
 const Topcards = () => {
   return (
-    <div className="flex flex-row w-screen gap-2 mb-4">
-      <div className="flex items-start flex-col gap-3 justify-between h-[200px] w-[325px] rounded-xl  bg-white pl-8 py-6">
+    <div className="grid grid-cols-3 w-full gap-[10px] xl-gap-[120px] mb-4">
+      <div className="flex items-start flex-col justify-between h-[200px] w-full rounded-xl  bg-white pl-8 py-6">
         <div>
           <p className="font-semibold text-[15px] ">Revnues</p>
           <div className="flex flex-row items-center">
@@ -51,7 +51,7 @@ const Topcards = () => {
           </span>
         </div>
       </div>
-      <div className="flex items-start flex-col gap-3 justify-between h-[200px] w-[325px] rounded-xl  bg-white pl-8 py-6">
+      <div className="flex items-start flex-col gap-3 justify-between h-[200px] w-full rounded-xl  bg-white pl-8 py-6">
         <div>
           <p className="font-semibold text-[15px]">Lost deals</p>
           <div className="flex flex-row items-center">
@@ -81,7 +81,7 @@ const Topcards = () => {
           </span>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between py-6 h-[200px] w-[270px] rounded-xl  bg-white">
+      <div className="flex flex-col items-center justify-between py-6 h-[200px] w-[90%] rounded-xl  bg-white">
       <p className="font-semibold text-[15px]">Quater Goals</p>
       <img src={graph} alt="graph" width={200} height={200}/>
       <div className="flex flex-row items-center text-[#734A00] text-xs">

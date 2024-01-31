@@ -13,13 +13,13 @@ const Bottomcard = () => {
     "Organic Place",
   ];
   return (
-    <div className="flex flex-row w-full gap-2 mb-4">
-      <div className="flex flex-col items-start p-4 rounded-xl bg-white h-[250px] w-[400px] ">
+    <div className="grid grid-cols-3 w-full gap-[10px]">
+      <div className="flex flex-col items-start p-4 rounded-xl bg-white h-[250px] w-full  ">
       <div className="text-black text-lg font-semibold mb-2">Chats</div>
       <div className="text-zinc-700 text-sm font-normal">2 unread messages</div>
       <ChatItems/>
       </div>
-      <div className="flex p-4 rounded-xl bg-white h-[250px] w-[400px] flex-col ">
+      <div className="flex p-4 rounded-xl bg-white h-[250px] w-full flex-col ">
         <div className="text-black text-lg font-semibold mb-6">Top States</div>
         <div className="w-full h-8 flex items-center justify-between p-2 bg-gradient-to-r from-orange-200 to-transparent rounded-md mb-2">
           <div className="flex w-full items-center justify-between px-2 ">
@@ -62,9 +62,9 @@ const Bottomcard = () => {
           </div>
         </div>
       </div>
-      <div className="flex p-4 rounded-xl bg-white h-[250px] w-[400px] flex-col ">
+      <div className="flex p-4 rounded-xl bg-white h-fit min-h-[250px] w-full flex-col ">
         <div className="text-black text-lg font-semibold mb-2">New Deals</div>
-        <div className="flex flex-row gap-3 items-center flex-wrap w-[380px]">
+        <div className="flex flex-row gap-3 items-center flex-wrap w-full">
           {dealData.map((item, index) => (
             <DealItems key={index} text={item} />
           ))}

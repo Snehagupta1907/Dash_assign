@@ -126,11 +126,12 @@ const Chart1 = () => {
     <div className=" flex flex-row gap-4 items-center  justify-between">
     <div className="text-black text-lg font-semibold ">Growth</div>
     <div className="flex flex-row gap-4 items-center">
-      <div className="text-[#555555] text-sm">
+      <div className="text-[#555555] !text-sm">
       <select
         id="year"
         onChange={(e) => setSelectedYear(e.target.value)}
         value={selectedYear}
+        className="text-xs border-none"
       >
         {years.map((year) => (
           <option key={year} value={year}>
@@ -144,6 +145,7 @@ const Chart1 = () => {
         id="month"
         onChange={(e) => setSelectedMonth(e.target.value)}
         value={selectedMonth}
+        className="text-xs border-none"
       >
         {months.map((month) => (
           <option key={month} value={month}>

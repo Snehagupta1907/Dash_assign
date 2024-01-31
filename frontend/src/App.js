@@ -5,8 +5,7 @@ const App = () => {
   return (
     <div className='h-full'>
     <Sidebar/>
-    <Layout/>
-    
+    <Layout/> 
     </div>
   )
 }
