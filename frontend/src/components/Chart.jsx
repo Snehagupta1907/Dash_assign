@@ -21,7 +21,7 @@ const Chart1 = () => {
         );
         setYears(uniqueYears);
 
-        setSelectedYear(uniqueYears[uniqueYears.length - 1]);
+        setSelectedYear(selectedYear || "2016");
 
         const monthsForSelectedYear = Array.from(
           new Set(
@@ -33,7 +33,7 @@ const Chart1 = () => {
         setMonths(monthsForSelectedYear.sort());
 
         setSelectedMonth(
-          monthsForSelectedYear[monthsForSelectedYear.length - 1]
+          selectedMonth || "07"
         );
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -41,7 +41,7 @@ const Chart1 = () => {
     };
 
     fetchData();
-  }, [selectedYear]);
+  }, [selectedYear,selectedMonth]);
 
   useEffect(() => {
     setFilteredData(
