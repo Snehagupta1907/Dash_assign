@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import csv from 'csv-parser';
 import fs from 'fs';
-import { downsampleTimeSeries } from './downsampling.js';
+import { downsampleTimeSeries } from './utils/downsampling.js';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
