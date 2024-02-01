@@ -18,7 +18,7 @@ Before you begin, make sure you have the following installed on your machine:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/full-stack-app.git
+      git clone https://github.com/Snehagupta1907/Dash_assign.git
     ```
 
 2. Navigate to the backend folder and install server dependencies:
@@ -51,7 +51,7 @@ npm start
 To start the server, run the following commands from the `backend` folder:
 
 ```bash
-cd fronten
+cd frontend
 npm start
 ```
 
