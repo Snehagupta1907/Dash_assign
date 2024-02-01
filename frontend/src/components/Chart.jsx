@@ -12,7 +12,7 @@ const Chart1 = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8080/plot");
+        const response = await fetch("https://dash-asign-back.onrender.com/plot");
         const data = await response.json();
         setDummyData(data);
 
