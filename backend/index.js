@@ -27,6 +27,10 @@ fs.createReadStream('time_data.csv')
     console.log('Original data loaded');
   });
 
+  app.get('/',(req,res)=>{
+    res.json("hello");
+  })
+
   app.get('/plot', (req, res) => {
     const { timestamps, profitPercentages } = downsampleTimeSeries(
         originalData.map((item) => item.timestamp),
